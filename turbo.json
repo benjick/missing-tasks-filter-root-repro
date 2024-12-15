@@ -11,6 +11,10 @@
         "dist/**"
       ]
     },
+    "//#root": {
+      "cache": false,
+      "persistent": true
+    },
     "prebuild": {},
     "lint": {},
     "type-check": {}

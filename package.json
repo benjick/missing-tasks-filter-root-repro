@@ -5,5 +5,12 @@
   "packageManager": "pnpm@8.15.6",
   "devDependencies": {
     "turbo": "^2.3.4-canary.2"
+  },
+  "scripts": {
+    "no-error-1": "turbo run build root",
+    "no-error-2": "turbo run --filter=!pkg-b build",
+    "no-error-3": "turbo run --filter=!pkg-b build //#root",
+    "error": "turbo run --filter=!pkg-b build root",
+    "root": "echo 👀"
   }
 }
